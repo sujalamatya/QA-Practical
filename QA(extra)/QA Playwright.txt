@@ -1,0 +1,91 @@
+----------------------PLAYWRIGHT
+open-source platform developed by Microsoft(functional testing garcha)
+proxy , drivers haru use garnu pardaina
+less time consuming, less load
+flakeness check garcha(eek choti run garda chalni aarko choti garda nachalni)
+
+---pros
+supports multi-tab and iframe
+supports different types of testingsuch s end to end, functional, and API testing
+generate an HTML report ti view the results to the test run in the browser
+auto-waiting of elements   			//components haru load garna code lekhnu pardaina
+gUi interface
+attachments for test runs
+
+---cons
+doesnot support edge or earlier IE11
+uses a desktop brower insted of a real device to emulate a mobile device
+APIRequest method does not support disabling tracking redirects
+confusing documents
+smaller community
+
+cyress ma middleman hundaina shellemeum  hundaina 
+
+------Annotation
+test.beforeAll		//sabse first ma k garni bhanera
+test.beforeEach		//eg: go to specified url , jaile each test step ko 1st ma aauna ko lai
+test.decribe		//set of test chuttauna kai(successful,fail)
+test			//pass , fail denote garnalai
+test.skip		//kunai test case ma problem aayo bhane .skip le tyo baheek aru sabai run huncha
+test.fail		//kunai test fail hunu parcha bhane use garni (pass cha bhaye warning garcha playwright le)
+test.only		//jun ma .only halcha tyo matrai run huncha (saab everytime run garna feasible hundaina so fail bhako lai marta check garna)
+test.slow		//slow hallyo bhane test ko speed lai by default 3X slow gardincha, kunai test slow cha (eminent ) bhane fail naaaos bhanera
+test.afterEach		//jun test pachi ko last ma run garna ko lai 
+test.afterAll		//kun set of command saab test sake pachi run garnii bhanera (file close)
+test.fixMe		//marks the test as failing. Playwright will not run this test, as opposed to the fail annotation
+
+
+-----Assertions
+validate garna use garcha
+Playwright includes test assertions in the form of expect function. To make an assertion, call expect(value) and choose a matcher that reflects the expectation.
+-syntax:
+expect(success).toBeTruthy();
+await expect(page.getByTestId('status')).toHaveText('Submitted');
+
+---auto retrying assertions
+retry gareko garey garcha jaba samma output meet hundaina
+
+---non retrying assertions
+retry gardauina , 1st try mai pass cha bhaye pass fail cha bhaye fail bhandincha
+
+---Negating matchers
+In general, we can expect the opposite to be true by adding a .not to the front of the matchers:
+
+expect(value).not.toEqual(0);
+await expect(locator).not.toContainText('some text');
+
+---Soft assertions
+By default, failed assertion will terminate test execution. Playwright also supports soft assertions: failed soft assertions do not terminate test execution, but mark the test as failed.
+eeuta test fail bho bhane aru test run huncha
+
+---Hard assertions
+eeuta fail bhaye bhane aru run gardaina
+
+---Custom expect message
+You can specify a custom expect message as a second argument to the expect function, for example:
+
+await expect(page.getByText('Name'), 'should be logged in').toBeVisible();
+
+---expect.configure
+ can create your own pre-configured  instance to have its own defaults such as timeout and soft.(time, attachment, always soft)
+
+const slowExpect = expect.configure({ timeout: 10000 });
+await slowExpect(locator).toHaveText('Submit');
+
+
+---expect.poll
+kunai req and response aauna kati time lagcha verify garna use garni
+
+
+
+
+
+
+
+
+
+
+
+
+
+

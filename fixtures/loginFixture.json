@@ -1,0 +1,45 @@
+{
+    "validUser":{
+        "userName":"student",
+        "password":"Password123"
+    },
+    "invalidUser":{
+        "userName":"studentinvalid",
+        "password":"Password321"
+    },
+    
+    "emptyUser":{
+        "userName":"",
+        "password":""
+    },
+    "contact":{
+        "Cemail":"sujal@gmail.com",
+        "password":"sujalamatya",
+        "firstname":"Sujal",
+        "lastname":"Amatya",
+        "birthdate":"2002-02-02",
+        "email":"sujal@gmail.com",
+        "phone":"9841234567",
+        "street1":"talachi",
+        "street2":"Jytha",
+        "city":"Kathmandu",
+        "stateprovince":"Bagmati",
+        "postalcode":"44600",
+        "country":"Nepal"
+        },
+    "editContact":{
+        
+        "firstname":"Sujin",
+        "lastname":"Dangol",
+        "birthdate":"2004-02-02",
+        "email":"sujin@gmail.com",
+        "phone":"9841234567",
+        "street1":"talachi",
+        "street2":"thamel",
+        "city":"Kathmandu",
+        "stateprovince":"Bagmati",
+        "postalcode":"44600",
+        "country":"Nepal"
+        }
+    
+}

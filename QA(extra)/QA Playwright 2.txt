@@ -1,0 +1,112 @@
+------Locating web elements > Xpath
+XPath is a technique that allows you ti navigate the structure of a webpages HTML
+using XPath helps find elements that are not found by locators such ID, class, or name
+---types
+
+-absolute XPath
+direct way to find the element
+begins with the single forward slash (/)
+select the elements from the root node
+eg: /html/body/div[1]/div[2]/header/div/div[2]/a
+
+-Relative XPath
+path starts from the middle of the HTML
+it starts with double for slash (//)
+is can search the elements anywhere at the webpage
+eg: //*(@id="block-perfecto-main-menu"]/div[2]/span
+
+								https://www.guru99.com/xpath-selenium.html
+------------------------------------------------------------
+How To Write Dynamic XPath In Selenium WebDriver
+1) Basic XPath
+Xpath=//input[@name='uid']
+
+2) Contains()
+Xpath=//*[contains(@type,'sub')]
+
+3) Using OR & AND
+Xpath=//*[@type='submit' or @name='btnReset']
+Xpath=//input[@type='submit' and @name='btnLogin']
+
+4) Xpath Starts-with
+XPath starts-with()
+Xpath=//label[starts-with(@id,'message')]
+
+5) XPath Text() Function
+//kunai attribute chaina (message) tag bhitra ko
+Xpath=//td[text()='UserID']
+
+------------------------------------------------------------
+
+XPath axes methods
+1) Following
+Xpath=//*[@type='text']//following::input
+
+2) Ancestor
+The ancestor axis selects all ancestors element (grandparent, parent, etc.) of the current node
+Xpath=//*[text()='Enterprise Testing']//ancestor::div
+
+3) Child
+parent node ko sabai child haru ali locate garna milcha
+Xpath=//*[@id='java_technologies']//child::li
+
+4) Preceding
+Select all nodes that come before the current node (oppsite of following)
+Xpath=//*[@type='submit']//preceding::input
+
+5) Following-sibling
+same node bhitra ko pachi aauni element select garna lai use garni 
+xpath=//*[@type='submit']//following-sibling::input
+
+6) Parent
+thyakkai mathi ko parent node lai matrai detect garcha
+Xpath=//*[@id='rt-feature']//parent::div
+
+7) Self
+afu le afu lai denote garcha (test.only jastrai concept)
+Xpath =//*[@type='password']//self::input
+
+8) Descendant
+Selects the descendants of the current node
+Xpath=//*[@id='rt-feature']//descendant::a     (th,tr,etc)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

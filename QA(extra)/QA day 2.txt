@@ -1,0 +1,129 @@
+------Testing techniques
+protocol to design a better test case and shape a proper testing workflow
+
+--whitebox test techniques
+based in interna structure if the test object, can be used in all test level
+	--white-box test techniques types
+-statement coverage //each statement eek na eek time test hunai parcha
+-decision coverage  //if aayo bhane k garni else aayo hane k garnni decisive hunu parrcha
+-condition coverage //a=a b=b check garni
+-multi condition coverage //a=b and or a=c huni type ko multi condition
+-data flow testing //test ma k data kasseri manage garchau, k data halda k hunch abhanera test garni 
+-control flow testing//requirement ko anusar flow/ test case haru milauni
+
+--black-box test techniques
+	--types
+-equivalence class testing //partition garera kunai test scenario miss nahoos bhanera divide garni
+-boundary value testing    //age feild ma targeted value kati ho (0-100) ani 0 balda k bho 45 halda k hunca test cover garnicertain alues are accepted or not
+-decision table testing	   //each requirement ko lai test case haru map out garni so that kunai case haru miss nahoos
+
+--experience-based test techniques
+test cases are derives from testers skill and intuition and their experience with similar app and tech, out of the box type of testing 
+	--types 
+-error guessing 	//experience cha bhane k error kata huna sakcha thyakka tha huncha (possible scenario)
+-exploratory testing	//j maan lagto tei chalara hercha , explore gardai kei mistakes haru khojni, actions haru properly perform bhako cha ki chaina
+-checklist-base testing	//list of test cases haru ,major parts haru priority wise test garni 
+
+------Test Plan
+detailed doc were qa ko k test garni karasi garni, kaile garni saaab deta ma explain garni doc, test garnu bhanda agadi banauni
+
+what should be included in a test plan?
+1.analyzee the product
+2. Design test strategy
+3. Define test objectives
+4. Define test criteria
+5. Resource planning
+6. Plan test environment
+7. Schedule & estimation
+8. Determine test deliverables 
+ 
+
+------requirement traceability matrix(rtm)
+doc that maps and traces if each requirement is met or not (kun req ko lai kun test case apply huncha map garera record garmi
+
+------ Test scenario
+collective set ko test cases which help the testing team to determine the positive and negative characteristics of the project, gives high level of idea of what we need to test
+
+------Test case
+set of action executed to verify a oarticular featire r functionality of your software app. kunai requirement miss nahoos bhanera (test steps, test data,pre post condition , sctual, expected output)
+
+------Test data
+user input, k input dida k output aaucha test garni
+
+------Test analysis 
+process of checking and analyzing the test artifacts in order to base the test conditions of test case
+
+------Test management
+method consists of organizing controlling, ensuring traceability and visibility of the testing process in order to deliver the high quality software app
+not just one but, it consists of series of activities
+
+
+//////day 3
+
+------Test organization
+is a procedure of defining roles in the testing process, 
+it defines who is responsible for which activities in testing process
+
+------Test estimation
+kati time lagha , kasle garcha, k use garera garcha,mannual or auto saab estimation (planning)
+it approximates how long the task world take to complete
+how long and how much testing cost
+
+--How to estimate?
+subtasks divide
+allocate task to team members
+estimate effort
+validate estimation
+
+------test monitoring
+progress tracking and evaluating
+taking action based on results of the test monitoring process
+
+--how to monitor and control test
+create monitoring plan
+update progress record
+analyze record and make adjustment
+procedure the report
+
+------Risk analysis
+probability of an occurrence of an undesirable event
+risk should be identified and corresponding solution should be determined before the start of the projet
+
+------how to perform risk analysis
+identify risk 
+analyze impact of each identified risk
+take countermeasures for the identified and analyzed risk
+
+------Defect management
+systematic process to identify and fix bugs
+
+----Defect management process
+-discovery of defect
+-defect categorization
+-fixing of defect by developers
+-verification by tester
+-defect closure
+-defect reports
+
+------Bug
+a sw bug is an error, flaw or fault in a computer program or system that cases it to produce an incorrect or unexpected result, or to behave in unintended ways
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

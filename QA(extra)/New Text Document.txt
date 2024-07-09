@@ -1,0 +1,41 @@
+const { test, expect } = require("@playwright/test");
+const testData = require("../../fixtures/loginfixture.json");
+import { LoginPage } from "../../pageobjects/login.po.js";
+
+test.beforeEach(async ({ page }) => {
+  // await page.goto('/');
+  await page.goto("https://practicetestautomation.com/practice-test-login/");
+});
+
+test.describe("valid login tests", () => {
+  test("correct password", async ({ page }) => {
+    const login = new LoginPage(page);
+    await login.login(testData.validLogin.username,testData.validLogin.password);
+    await expect(page.locator(".post-title")).toHaveText(
+      /Logged In Successfully/
+    );
+  });
+  test("empty password", async ({ page }) => {
+    const login = new LoginPage(page);
+    await login.login(testData.emptyPassword.username,testData.emptyPassword.password);
+    await expect(page.locator(".show")).toHaveText(
+      /Your password is invalid!/
+    );
+  });
+  test("empty username", async ({ page }) => {
+    const login = new LoginPage(page);
+    await login.login(testData.emptyUsername.username,testData.emptyUsername.password);
+    await expect(page.locator(".show")).toHaveText(
+      /Your username is invalid!/
+    );
+  });
+});
+
+test.describe("invalid login tests", () => {
+  test("loginerror", async ({ page }) => {
+    const invalidLogin = new LoginPage(page);
+    await invalidLogin.login(testData.invalidLogin.username,testData.invalidLogin.password);
+    const errorMessage = await page.locator("#error").textContent();
+    expect(errorMessage).toContain("Your password is invalid!");
+  });
+  });

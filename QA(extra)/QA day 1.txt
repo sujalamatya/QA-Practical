@@ -1,0 +1,103 @@
+------why testing?
+to identify defects
+to reduce flaws in the component or system
+increase the ease of use if the software
+software test help accelerate development	//dev phase mai bugs bhetyo bhane sajilo huncha
+
+
+------Testing and debugging
+testing: dev sake pachi testing period ma garni
+debugging: at the time of coding each line ma code check garni 
+
+
+------Quality assurance
+focused on adherence to proper processes, in order to provide confidence that the appropriate level of quality will e achieved
+
+error: mistake, misunderstanding misconception on part id software dev
+defect: a deviation from expected sw behavior caused by error
+failure: inability of a sw system or component to perform as required
+root cause: causes of defects are the earliest actions or conditions the contributed the defects
+effect: impact caused by defect
+
+------testing types
+
+-- white-box testing: code, archi, dataflow saab tha hunu parcha
+----unit, testing for memory leaks, penetration testing(eeuta dfeature ko root cause/ kun felid ma issue cha tyo check garni), path testing(app ko flow kasto cha, kun flow garda kun error aayo tyo check garna testing garni)
+
+--Black-box testing: no knowledge of code, high lvl of testing that focuses on  the behavior of the sw
+----Functional testing, non-functional testing, regression testing(overall testing, highlevel ma)
+----functional testing:
+(unit testing, smoke(existing features testing) regression, sanity(new feature test), integration, API, UI) 
+
+----Non-functional testing: 
+evaluates the characteristics, usability, performance, compatability "how well' the sys behaves
+(performance, stress, load, volume (kati data halda kasto performance/reaction dincha), security, upgrade & installation test(backward compatibility testing, paila ko existing form haru chalcha ki chaina), recovery testing(delete bhako data recover huncha ki not check))
+
+------Change-related testing
+kunai new change le old component lai effect garira cha ki chaina , old and new properly chalnu parryo as per the requirement, intreelates companents
+(functional testing, smoke testing , sanity testing, regression testing, build verification test(kunai specific build nai check garni kk changes cha saab, v1 cha bhane v2 test nagarni v1 nai test garni)
+
+
+------Testing technioques
+protocol to design a better test case and shape a proper testing workflow
+
+
+SIT UAT TEST ENVIRONMENT
+user acceptance testing
+System integration testing 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
